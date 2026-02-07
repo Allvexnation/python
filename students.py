@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime as date
 
 students = []
 
@@ -27,7 +27,7 @@ while True:
         name = input("Enter name: ")
         age = int(input("Enter age: "))
 
-        year = datetime.now().strftime("%y")
+        year = date.now().strftime("%y")
         count = len(students) + 1
         student_id = f"CCA{year}{count:04d}"
 
